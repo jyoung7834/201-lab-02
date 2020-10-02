@@ -5,6 +5,7 @@
 
 function visitor() {
     var visitorName = prompt('Welcome! My name is Jacque.  What is your name?');
+    // console.log('Thanks for stopping by' + visitorName);
     alert('Thanks for stopping by ' + visitorName)
     document.write('Thanks for stopping by ' + visitorName);
 }
@@ -21,11 +22,10 @@ if (local === 'yes' || local === 'y ') {
 }
 
 // Question 2
-var hobbie = prompt('Do I like painting?').toLowerCase
-    ()
+var hobbie = prompt('Do I like painting?').toLowerCase();
 if (hobbie === 'yes' || hobbie === 'y') {
     // console.log('No, I actually LOVE painting');
-    alert('No because I actually LOVE painting')
+    alert('No because, I actually L.O.V.E. painting')
 } else if (hobbie === 'No' || 'N') {
     alert('You are correct, because I LOVE to paint')
 }

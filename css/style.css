@@ -6,6 +6,7 @@ header {
 }
 
 h1 {
+  font-size: xx-large;
   font-style: italic;
 
 }
@@ -13,12 +14,23 @@ h1 {
 table {
   padding: 20px;
   width: 1140px;
-  border: 1px solid black;
+  
 
 }
 
 th {
+  font-weight: bold;
+  font-style: italic;
+  padding: 20px;
+  width: 250px;
   text-align: center;
+}
+
+td {
+  padding: 20px;
+  width: 250px;
+  border: 1px solid black;
+
 }
 
 .myImg{
@@ -36,11 +48,12 @@ th {
 }
 
 .tablerow2{
-  text-aligh: center;
+  text-align: center;
 
 }
 
 body {
+  padding: 25px;
   width: 1440;
   background-color: lightgreen;
 }
@@ -58,11 +71,7 @@ table {
 
 
 
-p {
-  padd
-}
 
 
 
 
-# first paragraph

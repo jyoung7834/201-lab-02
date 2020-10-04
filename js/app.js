@@ -55,9 +55,37 @@ var married = prompt('Am I married?').toLowerCase
     ()
 if (married === 'yes' || married === 'y') {
     // console.log('Yes and his name is Jack.  HA! Jacq & Jack');
-    alert('Yes and my husband\'s name is Jack.  HA! Jack & Jacque!')
+    alert('Yes, and my husband\'s name is Jack.  HA! Jack & Jacque!')
 } else if (hobbie === 'No' || 'N') {
     alert('I actually have been married for 25 years.')
 }
+// Final message notes don't forget a closing message
+// alert('Thanks for stopping by ' + visitorName = '!');
+
+// alert(`Hi ${visitor}, this is template literal`)
 
 
+// Game
+var tries = 0
+var number = 9
+var nope = false;
+
+while (tries < 3 && !Nope) {
+    var question1 = prompt('Let\'s play a game ' `${visitorName}` `!` + 'Try and guess Sherman\'s age.') 
+}   
+
+if (question1 < 9) {
+    alert("That is incorrect" `${visitorName}` "he is older.")
+} else if (question1 > 9) {
+    alert('Try again' `${visitorName} he is older`)
+} else if (number === '8)') {
+    alert("correct" `${visitorName}` "!")
+    nope = true;
+}
+
+
+
+
+
+// while (guess <= 3 &&  goodJob);
+// 

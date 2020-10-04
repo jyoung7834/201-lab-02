@@ -1,6 +1,6 @@
 
 .myImg{
-  text-align: center;
+  float: right;
 }
 
 
@@ -17,6 +17,7 @@ h1 {
 }
 
 table {
+  
   padding: 20px;
   width: 1140px;
   
@@ -34,7 +35,7 @@ th {
 td {
   padding: 20px;
   width: 250px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 }
 
@@ -53,10 +54,11 @@ td {
 
 
 body {
-  padding: 25px;
-  width: 1440px;
+  text-align: center;
+  width: max-width;
   background-color: lightgreen;
 }
+
 
 
 tr {
@@ -105,6 +107,8 @@ table {
   margin-left: 50px;
   display: inline-block
 }
+
+
 
 
 /* span {

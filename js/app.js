@@ -51,16 +51,14 @@ var kids = prompt('Do I have kids?').toLowerCase
 if (kids === 'yes' || kids === 'y') {
     // console.log('Yes, I have 2');
     alert('Yes, I have 2, my daughter Sydney and my son named Trey')
-} else if (hobbie === 'No' || 'N') {
+} else if (kids === 'No' || 'N') {
     alert('You are correct because, they aren\'t kids, they are actually young adults. ');
     score++;
 }
 
 // Question 5
-var married = prompt('Am I married?').toLowerCase
+var married = prompt('Am I married?').toLowerCase 
     ()
-
-
 if (married === 'yes' || married === 'y') {
     // console.log('Yes and his name is Jack.  HA! Jacq & Jack');
     alert('Yes, and my husband\'s name is Jack.  HA! Jack & Jacque!');
@@ -71,19 +69,43 @@ if (married === 'yes' || married === 'y') {
 
 //Question 6
 
-var tries = 0
-var numberOftries = 4
-var rightAnswer = false;
+// var tries = 0
+// var numberOftries = 3
+// var rightAnswer = false;
 
-while (tries < 3 && !rightAnswer){
-    var guessGame = prompt('Can you guess the age of my dog Sherman?  I will give you 4 tries')
+// while (tries < 3 && !rightAnswer) {
+//     var guessGame = prompt('Can you guess the age of my dog Sherman?');
+// }     
 
-    if(guessGame < 8){
-        alert('Try again' `${visitorName}`, + 'that guess to too low.');
-     } else if (guessGame > 8) {
-        alert('Well, not quite' `${visitorName}`, + 'that guess is too high!');
-     } else if (guessGame === 8){
-         alert('Fantastic' `${visitorName}`, + 'that is correct!');
-         rightAnswer = true;
+//     if (guessGame <= 7) {
+//         alert(`Try again ${visitorName}, that guess to too low.`);
+//     } else if (guessGame >= 9) {
+//         alert(`Well, not quite ${visitorName}, that guess is too high!`);
+//     } else if (guessGame === 8) {
+//         alert(`Fantastic ${visitorName},that is correct!`);
+//             }        rightAnswer = true;
+
+
+var score = 0;
+
+var guesses = 6;
+var guessesCorrect = false;
+var rightAnswer = 8;
+var guessAge = prompt('Can you guess the age of my dog Sherman?');
+
+while (guesses > 0 && !guessesCorrect) {
+    guesses--;
+for (var i = 0; i < rightAnswer.length; i++) {
+  if (rightAnswer[i] === guessAge) {
+      guessesCorrect = true;
+      alert(`That is correct, Sherman is ${guessAge}`);
+      score++;
      }
-     }
+}
+}
+if (guesses > 0 && !rightAnswer) {
+    guessAge = prompt(`Nope, ${guessAge} is not Sherman's age.`)
+}
+if (guesses === 0 && !rightAnswer) {
+    alert(`That is incorrect.  The correct age is ${rightAnswer}`);
+}

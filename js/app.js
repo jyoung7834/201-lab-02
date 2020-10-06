@@ -28,7 +28,7 @@ var hobbie = prompt('Do I like painting?').toLowerCase();
 if (hobbie === 'yes' || hobbie === 'y') {
     // console.log('No, I actually LOVE painting');
     alert('No because, I actually L.O.V.E. painting!!!')
-} else if (hobbie === 'no' || 'N') {
+} else if (hobbie === 'no' || 'n') {
     alert('You are correct, because I LOVE to paint!!!');
     score++;
 }
@@ -39,7 +39,7 @@ var pets = prompt('Do I have a cat?').toLowerCase
 if (pets === 'yes' || pets === 'y') {
     // console.log('No, I actually have a dog name Sherman');
     alert('No, I actually have a dog and his name is Sherman.')
-} else if (pets === 'no' || 'N') {
+} else if (pets === 'no' || 'n') {
     alert('You are correct.  I\'m allergic to cats, I have a dog name Sherman.');
     score++;
 }
@@ -101,7 +101,7 @@ while (tries < 3 ) {
 var guesses = 6;
 var guessesCorrect = false;
 var rightAnswer = ['apples', 'pineapple', 'kiwi', 'dragonfruit', 'mango'];
-var guessFav = prompt('Can you guess my favoritef fruit?');
+var guessFav = prompt('Can you guess my favorite fruit?');
 
 while (guesses > 0 && !guessesCorrect) {
     guesses--;
@@ -121,4 +121,4 @@ while (guesses > 0 && !guessesCorrect) {
     }
 }
 
-alert(`your scored ${score}/7`)
+alert(`you scored ${score}/7`)

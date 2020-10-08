@@ -94,7 +94,7 @@ while (tries < 3 ) {
     } 
 
     if (tries === 3 && guessGame !== shermanAge) {
-        alert("Sorry, you lose.")
+        alert("Sorry, you lose. The correct answer is 8.")
     }
 }     
 
